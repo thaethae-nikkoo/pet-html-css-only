@@ -99,11 +99,71 @@ body {
   font-style: italic;
   text-transform: uppercase;
 }
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(30, 29, 32, 0.8) 0%,
+      rgba(25, 25, 34, 0.8) 35%
+    ),
+    url("photo/dog&cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.home .home-div {
+  width: 60%;
+  text-align: center;
+  color: chocolate;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home .home-div .home-btn-cont {
+  margin: 40px 30px;
+}
+.home .home-div .home-btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid chocolate;
+  padding: 13px;
+  margin: 0px 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  font-style: italic;
+  padding: 30px;
+}
+.footer .footer-form-submit {
+  background-color: chocolate;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+}
+.footer input {
+  padding: 10px;
+}
 @media screen and (max-width: 800px) {
   .nav-text {
     display: none !important;
   }
   .menu {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home .home-div .home-btn {
+    display: block;
+    margin-top: 10px;
   }
 }
